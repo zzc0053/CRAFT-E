@@ -1,4 +1,4 @@
-CRAFT-E: A Neuro-Symbolic Framework for Embodied Affordance Grounding
+# CRAFT-E: A Neuro-Symbolic Framework for Embodied Affordance Grounding
 
 The `Cornell_Dataset_Annotation` folder contains paired RGB-D images (`rgbd/`) and corresponding JSON annotations (`annotation/`), where each annotation specifies `verb` (a verb representing the functional request), `object` (the single object that affords the action), and `shapes` (bounding boxes and labels for all visible objects). Additional real-world annotated data are in `RealWorld_Dataset_Annotation`, while `Evaluation Code` provides scripts for affordance detection and grasp evaluation.
 
