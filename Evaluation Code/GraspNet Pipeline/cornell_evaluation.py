@@ -63,9 +63,9 @@ if __name__=='__main__':
         end = time.time()
         elapsed = end - start
         times.append(elapsed)
-        print(f"Cost: {elapsed:.4f} 秒")
+        print(f"Cost: {elapsed:.4f} second")
         time.sleep(0.5)
 
     if times:
         avg_time = np.mean(times)
-        print(f"Average cost: {avg_time:.4f} 秒")
+        print(f"Average cost: {avg_time:.4f} second")

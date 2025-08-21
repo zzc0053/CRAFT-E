@@ -1,7 +1,7 @@
 # CRAFT-E: A Neuro-Symbolic Framework for Embodied Affordance Grounding
 
 ## Cornell_Dataset_Annotation
-The `Cornell_Dataset_Annotation` folder contains paired RGB-D images (`rgbd/`) and corresponding JSON annotations (`annotation/`), where each annotation specifies `verb` (a verb representing the functional request), `object` (the single object that affords the action), and `shapes` (bounding boxes and labels for all visible objects). Additional real-world annotated data are in `RealWorld_Dataset_Annotation`, while `Evaluation Code` provides scripts for affordance detection and grasp evaluation.
+The `Cornell_Dataset_Annotation` folder contains paired RGB-D images (`rgbd/`) and corresponding JSON annotations (`annotation/`), where each annotation specifies `verb` (a verb representing the functional request), `object` (the single object that affords the action), and `shapes` (bounding boxes and labels for all visible objects).
 
 ## RealWorld_Dataset_Annotation
 The `RealWorld_Dataset_Annotation` folder contains annotations from three independent annotators (`annotator1.json`, `annotator2.json`, `annotator3.json`) over a real-world dataset of 20 verbs and 39 physical objects. For each verb, annotators selected the object that they judged to most affordably satisfy the verb query, providing diverse perspectives on functional grounding in real-world scenarios.
@@ -11,7 +11,7 @@ The `Samples` folder contains experimental videos of real-world grasping tasks p
 
 ## Evaluation Code
 
-The `Evaluation Code` folder contains our implementation for real-world grasping tasks. Due to the large gap between the environments required by **SAMv2** and **GraspNet**, the system is implemented in a **client–server** mode.  
+The `Evaluation Code` folder provides scripts for affordance detection and grasp tasks evaluation. Due to the large gap between the environments required by **SAMv2** and **GraspNet**, the system is implemented in a **client–server** mode.  
 
 ### GraspNet Pipeline
 - **camera.py** – wrapper for Intel RealSense camera functions.  
@@ -36,3 +36,4 @@ The Knowledge Graph folder contains the code and data files used to construct th
 - **realworld_gemini_prompts** – Prompt templates used for querying Gemini to extract descriptive affordance attributes.
 - **verb_property_graph_realworld_v3.txt** – Knowledge graph edges between verbs and their associated properties (e.g., cut → sharp).  
 - **verb_property_object_graph_realworld_v3.txt** – Extended graph linking properties to objects (e.g., container → bowl).
+
