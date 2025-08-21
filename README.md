@@ -13,13 +13,17 @@ The `Samples` folder contains experimental videos of real-world grasping tasks p
 
 The `Evaluation Code` folder provides scripts for affordance detection and grasp tasks evaluation. Due to the large gap between the environments required by **SAMv2** and **GraspNet**, the system is implemented in a **client–server** mode.  
 
+### GraspKpNet Pipeline
+- **dobot_kpnet_main.py** – kpnet client script for detecting grasp points and sending requests. 
+- **kpnet_cornell_eval.py** – kpnet evaluation scripts on the Cornell dataset.  
+
 ### GraspNet Pipeline
 - **camera.py** – wrapper for Intel RealSense camera functions.  
 - **dobot_cr3.py** – wrapper for controlling the DoBot CR3 robot arm.  
 - **graspnet_pipeline.py** – main pipeline code for the GraspNet backbone model.  
 - **hand_eye_calibration.py** – hand–eye calibration utilities.  
 - **util.py** – helper utility functions.  
-- **main.py** – client script for detecting grasp points and sending requests.  
+- **main.py** – grasp client script for detecting grasp points and sending requests.  
 - **T_cam2gripper.npy** – calibration matrix for camera-to-gripper transformation.  
 - **cornell_evaluation.py** – evaluation scripts on the Cornell dataset.  
 
