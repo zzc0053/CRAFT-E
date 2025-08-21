@@ -1,9 +1,12 @@
 # CRAFT-E: A Neuro-Symbolic Framework for Embodied Affordance Grounding
 
+## Cornell_Dataset_Annotation
 The `Cornell_Dataset_Annotation` folder contains paired RGB-D images (`rgbd/`) and corresponding JSON annotations (`annotation/`), where each annotation specifies `verb` (a verb representing the functional request), `object` (the single object that affords the action), and `shapes` (bounding boxes and labels for all visible objects). Additional real-world annotated data are in `RealWorld_Dataset_Annotation`, while `Evaluation Code` provides scripts for affordance detection and grasp evaluation.
 
+## RealWorld_Dataset_Annotation
 The `RealWorld_Dataset_Annotation` folder contains annotations from three independent annotators (`annotator1.json`, `annotator2.json`, `annotator3.json`) over a real-world dataset of 20 verbs and 39 physical objects. For each verb, annotators selected the object that they judged to most affordably satisfy the verb query, providing diverse perspectives on functional grounding in real-world scenarios.
 
+## Samples
 The `Samples` folder contains experimental videos of real-world grasping tasks performed using either **GraspNet** or **GraspKpNet**. Each video filename encodes both the verb query and the ground truth object that affords the verb, e.g., `Rotate_Screwdriver.mov` represents the verb *rotate* with the object *screwdriver*.
 
 ## Evaluation Code
